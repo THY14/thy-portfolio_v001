@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const LINKS = [
   { name: "GitHub",  href: "#", icon: "/github.svg" },
-  { name: "Linkedin",   href: "#", icon: "/Linkedin.svg"  },
+  { name: "Linkedin",   href: "#", icon: "/linkedin.svg"  },
   { name: "Email", href: "#", icon: "/email.svg" },
   { name: "Telegram", href: "#", icon: "/telegram.svg" },
 ];
