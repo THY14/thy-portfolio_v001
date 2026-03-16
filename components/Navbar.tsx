@@ -8,7 +8,7 @@ import {
   Battery,
   BatteryCharging,
 } from "lucide-react";
-import { navItems } from "@/lib/data";
+import { navItems } from "../lib/data";
 
 export default function Navbar() {
   const [time, setTime] = useState("00:00");
