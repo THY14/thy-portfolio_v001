@@ -97,7 +97,7 @@ export default function Hero() {
       )}
 
       {/* MAIN CONTENT */}
-      <div className={`max-w-6xl mx-auto px-6 w-full py-16 grid gap-12 items-center transition-opacity duration-700  ${ready ? "opacity-100" : "opacity-0"}`}
+      <div className={`max-w-7xl  mx-auto px-12 w-full py-16 grid gap-12 items-center transition-opacity duration-700  ${ready ? "opacity-100" : "opacity-0"}`}
         style={{ gridTemplateColumns: "repeat(auto-fit,minmax(300px,1fr))" }}>
         <div className="anim-fade-left">
           <div className="rounded-xl overflow-hidden border border-white/8 shadow-2xl md:mt-0 lg:mt-14" style={{ background: "#100e1e" }}>
@@ -105,11 +105,11 @@ export default function Hero() {
               <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
               <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
               <div className="w-3 h-3 rounded-full bg-[#28ca41]" />
-              <span className="ml-2 text-xs text-white/30 flex-1" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>methy@ubuntu: ~</span>
+              <span className="ml-2 text-md text-white/30 flex-1" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>methy@ubuntu: ~</span>
               <span className="text-[10px] px-2 py-0.5 rounded bg-orange-500/15 text-orange-400 border border-orange-500/30"
                 style={{ fontFamily: "'Ubuntu Mono',monospace" }}>bash</span>
             </div>
-            <div className="p-5 min-h-72" style={{ fontFamily: "'Ubuntu Mono',monospace", fontSize: 13 }}>
+            <div className="p-5 min-h-72" style={{ fontFamily: "'Ubuntu Mono',monospace", fontSize: 17 }}>
               {TERM.slice(0, termIdx).map((line, i) => (
                 <div key={i} className="leading-[22px]">
                   {line.p ? (
@@ -168,15 +168,15 @@ export default function Hero() {
                 style={{ background: "linear-gradient(135deg,#E95420,#77216F)" }}>T</div> */}
               
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-orange" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Muy Methy</p>
-                <p className="text-[11px] text-white/40 mt-0.5" style={{ fontFamily: "'Ubuntu Mono',monospace" }}> Software Developer</p>
+                <p className="text-md font-semibold text-orange" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Muy Methy</p>
+                <p className="text-[12px] text-white/40 mt-0.5" style={{ fontFamily: "'Ubuntu Mono',monospace" }}> Software Developer</p>
               </div>
               <div className="relative w-3 h-3">
                 <div className="w-3 h-3 rounded-full bg-green-400" />
                 <div className="absolute inset-0 rounded-full bg-green-400" style={{ animation: "pingDot 1.4s ease-out infinite" }} />
               </div>
             </div>
-            <p className="text-[13px] text-white/55 leading-relaxed" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
+            <p className="text-[14px] text-white/55 leading-relaxed" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
               Crafts responsive websites where technologies meet creativity.
             </p>
           </div>
@@ -192,7 +192,7 @@ export default function Hero() {
               style={{
                 background: "#1e1a2e",
                 fontFamily: "'Ubuntu Mono', monospace",
-                fontSize: 11,
+                fontSize: 12,
                 color: "rgba(255,255,255,0.5)"
               }}
             >

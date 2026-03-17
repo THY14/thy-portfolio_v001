@@ -20,17 +20,17 @@ export default function Projects() {
         <div className={`flex items-center justify-between mb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
           <div className="flex items-center gap-3">
             <span className="text-orange-500 font-bold text-2xl" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>#</span>
-            <h2 className="text-2xl font-bold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>projects</h2>
+            <h2 className="text-3xl font-bold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>projects</h2>
             <div className="hidden sm:block h-px w-28 bg-orange-500/25" />
           </div>
-          <a href="#" className="text-xs text-white/35 hover:text-orange-400 transition-colors flex items-center gap-1.5"
+          <a href="#" className="text-md text-white/35 hover:text-orange-400 transition-colors flex items-center gap-1.5"
             style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
             View all →
           </a>
         </div>
 
         {/* Terminal path breadcrumb */}
-        <div className={`flex items-center gap-2 mb-6 text-xs transition-all duration-700 delay-100 ${visible ? "opacity-100" : "opacity-0"}`}
+        <div className={`flex items-center gap-2 mb-6 text-md transition-all duration-700 delay-100 ${visible ? "opacity-100" : "opacity-0"}`}
           style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
           <span className="text-green-400">methy@ubuntu</span>
           <span className="text-white/20">:</span>

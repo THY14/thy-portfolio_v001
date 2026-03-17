@@ -113,7 +113,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        className="fixed top-0 left-0 right-0 z-50 h-11 flex items-center justify-between px-4 border-b border-white/5"
+        className="fixed top-0 left-0 right-0 z-50 h-14 flex items-center justify-between px-4 border-b border-white/5"
         style={{
           background: "rgba(22,18,34,0.97)",
           backdropFilter: "blur(16px)",
@@ -125,7 +125,7 @@ export default function Navbar() {
             className="flex items-center gap-2 px-3 py-1 rounded text-sm font-medium text-white/90 hover:bg-white/8 transition-colors"
             style={{ fontFamily: "'Ubuntu', sans-serif" }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <rect x="3" y="3" width="7" height="7" rx="1.5" fill="#E95420" />
               <rect
                 x="14"
@@ -157,7 +157,7 @@ export default function Navbar() {
             </svg>
           </button>
 
-          <div className="w-px h-5 bg-white/8 mx-1 hidden md:block" />
+          <div className="w-px h-7 bg-white/8 mx-1 hidden md:block" />
  
           {/* dk navbar */}
           <nav className="hidden md:flex items-center gap-0.5">
@@ -169,7 +169,7 @@ export default function Navbar() {
                 <button
                   key={id}
                   onClick={() => go(item.href)}
-                  className={`px-3 py-1 rounded text-xs transition-all border-b-2 ${
+                  className={`px-3 py-1 rounded text-md transition-all border-b-2 ${
                     isActive
                       ? "text-orange-400 bg-orange-500/10 border-orange-500"
                       : "text-white/50 hover:text-white/80 border-transparent"
@@ -193,15 +193,15 @@ export default function Navbar() {
                 <Battery size={24} className="text-green-400" />
               )}
 
-              <span className="text-xs">{battery}%</span>
+              <span className="text-md">{battery}%</span>
             </div>
           )}
-          <span className="text-sm text-white">{time}</span>
+          <span className="text-md text-white">{time}</span>
           <button
             onClick={() => setMenuOpen((v) => !v)}
             className="w-7 h-7 rounded-full flex items-center justify-center bg-white/6 hover:bg-white/12 transition"
           >
-            <Power size={14} className="text-white" />
+            <Power size={16} className="text-white" />
           </button>
         </div>
       </header>

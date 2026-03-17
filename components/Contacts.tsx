@@ -30,13 +30,13 @@ export default function Contacts() {
       <div className="max-w-6xl mx-auto px-6">
         <div className={`flex items-center gap-3 mb-12 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
           <span className="text-orange-500 font-bold text-2xl" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>#</span>
-          <h2 className="text-2xl font-bold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>contacts</h2>
+          <h2 className="text-3xl font-bold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>contacts</h2>
           <div className="hidden sm:block h-px w-28 bg-orange-500/25" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-10">
           <div className={`space-y-5 transition-all duration-700 delay-100 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}`}>
-            <p className="text-[14px] text-white/50 leading-relaxed max-w-sm" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
+            <p className="text-[16px] text-white/50 leading-relaxed max-w-sm" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
               I&apos;m interested in freelance opportunities. However, if you have other requests or questions, don&apos;t hesitate to contact me.
             </p>
 
@@ -47,8 +47,8 @@ export default function Contacts() {
                 <div className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-60" />
               </div>
               <div>
-                <p className="text-[13px] font-medium text-green-400" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Available for work</p>
-                <p className="text-[11px] text-white/30 mt-0.5" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>Response time: usually within 24h</p>
+                <p className="text-[14px] font-medium text-green-400" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Available for work</p>
+                <p className="text-[12px] text-white/30 mt-0.5" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>Response time: usually within 24h</p>
               </div>
             </div>
           </div>
@@ -61,11 +61,11 @@ export default function Contacts() {
                 <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
                 <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
                 <div className="w-3 h-3 rounded-full bg-[#28ca41]" />
-                <span className="ml-2 text-xs text-white/30" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>contacts — Messaging</span>
+                <span className="ml-2 text-md text-white/30" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>contacts — Messaging</span>
               </div>
 
               <div className="p-5">
-                <p className="text-xs text-white/25 mb-4" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
+                <p className="text-md text-white/25 mb-4" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
                   <span className="text-green-400">$ </span>message --to methy
                 </p>
 
@@ -79,17 +79,17 @@ export default function Contacts() {
                         <Image src={c.icon} alt={c.label} width={16} height={16} className="opacity-80" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <p className="text-[10px] text-white/30 mb-0.5" style={{ fontFamily: "'Ubuntu',sans-serif" }}>{c.label}</p>
+                        <p className="text-[14px] text-white/30 mb-0.5" style={{ fontFamily: "'Ubuntu',sans-serif" }}>{c.label}</p>
                         <a href={c.href} target="_blank" rel="noopener noreferrer"
-                          className="text-[13px] text-white/80 hover:text-white transition-colors"
+                          className="text-[14px] text-white/80 hover:text-white transition-colors"
                           style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
                           {c.value}
                         </a>
                       </div>
                       <button onClick={() => copy(c.value)}
-                        className="opacity-0 group-hover:opacity-100 p-1.5 rounded text-white/30 hover:text-orange-400 transition-all">
+                        className="opacity-0 group-hover:opacity-100 p-2 rounded text-white/30 hover:text-orange-400 transition-all">
                         {copied === c.value
-                          ? <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="#4cff91" strokeWidth="2.5"/></svg>
+                          ? <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="#4cff91" strokeWidth="2.5"/></svg>
                           : <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" strokeWidth="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" strokeWidth="2"/></svg>
                         }
                       </button>

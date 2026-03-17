@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </span>
         {project.liveUrl && (
           <a href={project.liveUrl} onClick={e => e.stopPropagation()}
-            className="text-[10px] px-2 py-0.5 rounded bg-orange-500/15 text-orange-400 border border-orange-500/25 hover:bg-orange-500/25 transition-colors"
+            className="text-[13px] px-2 py-0.5 rounded bg-orange-500/15 text-orange-400 border border-orange-500/25 hover:bg-orange-500/25 transition-colors"
             style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
             ↗ live
           </a>
@@ -47,7 +47,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <div className="p-4 flex flex-col gap-3 flex-1">
         <div>
           <h3 className="font-semibold text-white text-[15px]" style={{ fontFamily: "'Ubuntu',sans-serif" }}>{project.title}</h3>
-          <p className="text-white/45 text-[13px] mt-1" style={{ fontFamily: "'Ubuntu',sans-serif" }}>{project.description}</p>
+          <p className="text-white/45 text-[14px] mt-1" style={{ fontFamily: "'Ubuntu',sans-serif" }}>{project.description}</p>
         </div>
 
         {/* Tags */}
