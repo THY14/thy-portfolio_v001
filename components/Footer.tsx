@@ -29,7 +29,7 @@ export default function Footer() {
             <p className="text-[11px] text-white/30" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>methymuy@gmail.com</p>
           </div> */}
         </div>
-        <p className="text-[11px] text-white/25" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
+        <p className="text-[11px] text-white/25 mb-8 lg:mb-0" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
           <span className="text-orange-500">©2026</span> <span className="text-red-400"></span>  ·{" "}
           <span className="text-green-400">Ubuntu 22.04 LTS</span>
         </p>
