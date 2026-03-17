@@ -164,10 +164,11 @@ export default function Hero() {
           <div className="w-full max-w-sm rounded-xl border border-white/8 p-4 shadow-xl anim-fade-right d-300"
             style={{ background: "rgba(30,26,48,0.9)", backdropFilter: "blur(12px)" }}>
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-9 h-9 rounded-full flex items-center justify-center text-base font-bold text-white flex-shrink-0"
-                style={{ background: "linear-gradient(135deg,#E95420,#77216F)" }}>T</div>
+              {/* <div className="w-9 h-9 rounded-full flex items-center justify-center text-base font-bold text-white flex-shrink-0"
+                style={{ background: "linear-gradient(135deg,#E95420,#77216F)" }}>T</div> */}
+              
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Muy Methy</p>
+                <p className="text-sm font-semibold text-orange" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Muy Methy</p>
                 <p className="text-[11px] text-white/40 mt-0.5" style={{ fontFamily: "'Ubuntu Mono',monospace" }}> Software Developer</p>
               </div>
               <div className="relative w-3 h-3">

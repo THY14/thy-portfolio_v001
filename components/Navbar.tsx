@@ -181,9 +181,9 @@ export default function Navbar() {
             })}
           </nav>
         </div>
-        <div className="absolute left-1/2 -translate-x-1/2 text-sm text-white/80 hidden md:block">
+        {/* <div className="absolute left-1/2 -translate-x-1/2 text-sm text-white/80 hidden md:block">
           muymethy.dev
-        </div>
+        </div> */}
         <div className="flex items-center gap-3">
           {battery !== null && (
             <div className="hidden sm:flex items-center gap-1 text-white/70 mt-[3px]">
