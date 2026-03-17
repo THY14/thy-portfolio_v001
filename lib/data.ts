@@ -36,12 +36,22 @@ export const projects: Project[] = [
     cachedUrl: "https://github.com/THY14/gym.git",
   },
   {
-    id: "portfolio",
-    title: "Portfolio",
-    description: "Personal portfolio website",
-    image: "/project-portfolio.png",
-    tags: ["HTML", "SCSS", "JavaScript"],
-    liveUrl: "#",
+    id: "Safe AID",
+    title: "Safe Aid",
+    description: "A Mobile Application using Flutter user can find a guidence to get emergency assistance",
+    image: "/projects/safeaid.png",
+    tags: ["Dart", "Flutter"],
+    // liveUrl: "#",
+    cachedUrl: "https://github.com/sokundeny/safeaid_kh.git",
+  },
+  {
+    id: "Sastra",
+    title: "Sastra",
+    description: "An Khmer Language website, user can buy course with bakong and self-learning",
+    image: "/projects/sastra.png",
+    tags: ["Node.js", "Tailwind", "Next.js","Express"],
+    // liveUrl: "#",
+    cachedUrl: "https://github.com/pychey/Online-Learning-Platform.git",
    
   },
 ];

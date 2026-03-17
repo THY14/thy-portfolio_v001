@@ -41,7 +41,7 @@ export default function Projects() {
 
      
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {projects.slice(0, 3).map((project, i) => (
+          {projects.slice(0, 5).map((project, i) => (
             <div key={project.id}
               className={`transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
               style={{ transitionDelay: `${i * 120 + 150}ms` }}>
