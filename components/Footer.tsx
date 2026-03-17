@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 const LINKS = [
-  { name: "GitHub",  href: "#", icon: "/github.svg" },
+  // { name: "GitHub",  href: "#", icon: "/github.svg" },
   { name: "Linkedin",   href: "#", icon: "/linkedin.svg"  },
   { name: "Email", href: "#", icon: "/email.svg" },
   { name: "Telegram", href: "#", icon: "/telegram.svg" },
@@ -20,17 +20,17 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-center gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white"
+          {/* <div className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white"
             style={{ background: "linear-gradient(135deg,#E95420,#77216F)", fontFamily: "'Ubuntu',sans-serif" }}>T</div>
           <div>
             <p className="text-sm font-semibold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Methy</p>
             <p className="text-[11px] text-white/30" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>methymuy@gmail.com</p>
-          </div>
+          </div> */}
         </div>
         <p className="text-[11px] text-white/25" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
-          <span className="text-orange-500">©2026</span> <span className="text-red-400">♥</span>  ·{" "}
+          <span className="text-orange-500">©2026</span> <span className="text-red-400"></span>  ·{" "}
           <span className="text-green-400">Ubuntu 22.04 LTS</span>
         </p>
       </div>

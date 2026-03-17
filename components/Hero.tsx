@@ -8,20 +8,27 @@ const BOOT_LINES = [
   { text: "[ OK ] Loading portfolio.service...", yellow: false },
   { text: "[ OK ] Mounting /home/thy filesystem", yellow: false },
   { text: "[ OK ] Started thy Dev Server on :3000", yellow: false },
-  { text: "Welcome to Ubuntu 22.04.3 LTS (Muy Methyserver)", yellow: true },
+  { text: "Welcome to Ubuntu 22.04.3 LTS (Muy Methy-server)", yellow: true },
 ];
 
 const TERM = [
-  { p: true,  cmd: "cat about-me.txt" },
-  { p: false, text: "Hi! I'm Methy — web designer & front-end developer" },
-  { p: false, text: "Based in Chroy Chongva , Phnom Penh · Building for the web" },
+  // { p: true, cmd: "whoami" },
+  // { p: false, text: "Methy — Web Developer " },
+  // { p: false, text: "Phnom Penh · Building modern web apps" },
+  // { p: false, text: "" },
+
+  { p: true, cmd: "cat about.txt" },
+  { p: false, text: "Third-year Computer Science student at CADT" },
+  { p: false, text: "Focused on full-stack development and real-world projects" },
   { p: false, text: "" },
-  { p: true,  cmd: "ls skills/" },
-  { p: false, text: "TypeScript  JavaScript  Python  Java" },
-  { p: false, text: "React  Vue  Next.js  Node.js  Express.js" },
+
+  { p: true, cmd: "ls skills/" },
+  { p: false, text: "React  Next.js  Vue  Typescripts  Nest.js" },
+  { p: false, text: "Node.js  HTML CSS  AWS Docker  MySQL CI/CD" },
   { p: false, text: "" },
-  { p: true,  cmd: "echo $STATUS" },
-  { p: false, text: "🟢 Available for freelance — contact me!", green: true },
+
+  { p: true, cmd: "echo $STATUS" },
+  { p: false, text: "🟢 Available for internship / junior role", green: true },
 ];
 
 export default function Hero() {
@@ -59,8 +66,6 @@ export default function Hero() {
         style={{ background: "radial-gradient(circle,rgba(119,33,111,0.18) 0%,transparent 65%)" }} />
       <div className="absolute bottom-0 left-0 w-[350px] h-[350px] rounded-full pointer-events-none"
         style={{ background: "radial-gradient(circle,rgba(233,84,32,0.12) 0%,transparent 65%)" }} />
-
-      {/*BOOT SCREEN*/}
       {!booted && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center " style={{ background: "#0d0b18" }}>
           <div className="w-full max-w-xl px-8">
@@ -163,7 +168,7 @@ export default function Hero() {
                 style={{ background: "linear-gradient(135deg,#E95420,#77216F)" }}>T</div>
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-semibold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Muy Methy</p>
-                <p className="text-[11px] text-white/40 mt-0.5" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>Devops - Software Developer</p>
+                <p className="text-[11px] text-white/40 mt-0.5" style={{ fontFamily: "'Ubuntu Mono',monospace" }}> Software Developer</p>
               </div>
               <div className="relative w-3 h-3">
                 <div className="w-3 h-3 rounded-full bg-green-400" />
@@ -181,10 +186,18 @@ export default function Hero() {
               style={{ boxShadow: "0 0 40px rgba(233,84,32,0.2)" }}>
               <Image src="/methy.png" alt="" width={220} height={100} className="object-contain block" priority />
             </div>
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-1.5 rounded-full whitespace-nowrap border border-orange-500/30 shadow-lg"
-              style={{ background: "#1e1a2e", fontFamily: "'Ubuntu Mono',monospace", fontSize: 11, color: "rgba(255,255,255,0.5)" }}>
-              <span className="w-2 h-2 rounded-full bg-orange-500 flex-shrink-0" />
-              Working on <span className="text-white font-bold ml-1">Portfolio</span>
+            <div
+              className="absolute -bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-1.5 rounded-full whitespace-nowrap border border-orange-500/30 shadow-lg"
+              style={{
+                background: "#1e1a2e",
+                fontFamily: "'Ubuntu Mono', monospace",
+                fontSize: 11,
+                color: "rgba(255,255,255,0.5)"
+              }}
+            >
+              <span className="w-2 h-2 rounded-full bg-orange-500 " />
+              Status:
+              <span className="text-white font-bold ml-1">Coding</span>
             </div>
           </div>
           <div className="flex gap-3 mt-6">

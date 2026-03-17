@@ -9,29 +9,31 @@ export const navItems: NavItem[] = [
 
 export const projects: Project[] = [
   {
-    id: "chertnodes",
-    title: "ChertNodes",
-    description: "Minecraft servers hosting",
-    image: "/project-chertnodes.jpg",
-    tags: ["HTML", "SCSS", "Python", "Flask"],
-    liveUrl: "#",
-    cachedUrl: "#",
+    id: "Twatch",
+    title: "T Watch",
+    description: "E-commerce Website  •  March 2025",
+    image: "/projects/Twatch.png",
+    tags: ["HTML", "CSS", "React", "Javascripts"],
+    // liveUrl: "#",
+    cachedUrl: "https://github.com/sokundeny/T_WATCH.git",
   },
   {
-    id: "protectx",
-    title: "ProtectX",
-    description: "Discord anti-crash bot",
-    image: "/project-protectx.png",
-    tags: ["React", "Express", "Discord.js", "Node.js", "HTML", "SCSS", "Python", "Flask"],
-    liveUrl: "#",
+    id: "Codify",
+    title: "Codify",
+    description: "Coding Based LMS",
+    image: "/projects/codify.png",
+    tags: ["Next.js", "Typescripts", "Nest.js", "Docker", "Tailwind CSS", "" ,"","" ],
+    liveUrl: "http://codify.works/",
+    cachedUrl: "https://github.com/THY14/Codify-hosting.git",
   },
   {
-    id: "kahoot",
-    title: "Kahoot Answers Viewer",
-    description: "Get answers to your kahoot quiz",
-    image: "/project-kahoot.png",
-    tags: ["CSS", "Express", "Node.js"],
-    liveUrl: "#",
+    id: "Gym club",
+    title: "Gym club",
+    description: "Club that transform your body",
+    image: "/projects/gym.png",
+    tags: ["React", "Express", "Node.js","Tailwind CSS"],
+    // liveUrl: "#",
+    cachedUrl: "https://github.com/THY14/gym.git",
   },
   {
     id: "portfolio",
@@ -40,13 +42,14 @@ export const projects: Project[] = [
     image: "/project-portfolio.png",
     tags: ["HTML", "SCSS", "JavaScript"],
     liveUrl: "#",
+   
   },
 ];
 
 export const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
-    skills: ["TypeScript", "Lua", "Python", "JavaScript"],
+    skills: ["TypeScript", "JAVA", "C/C++", "JavaScript" ,"Dart"],
   },
   {
     title: "Databases",
@@ -54,15 +57,15 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Tools",
-    skills: ["VSCode", "Neovim", "Linux", "Figma", "XFCE", "Arch", "Git", "Font Awesome"],
+    skills: ["VSCode", "Neovim", "Linux", "Figma", "Git", "Docker" ,"AWS" ,"Jira","Notion"],
   },
   {
     title: "Other",
-    skills: ["HTML", "CSS", "EJS", "SCSS", "REST", "Jinja"],
+    skills: ["HTML", "CSS", "EJS", "Tailwind CSS", "REST", "DSA"],
   },
   {
     title: "Frameworks",
-    skills: ["React", "Vue", "Disnake", "Discord.js", "Flask", "Express.js"],
+    skills: ["React", "Vue", "FLutter", "Flask", "Express.js"],
   },
 ];
 

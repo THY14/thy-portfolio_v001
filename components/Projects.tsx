@@ -17,8 +17,6 @@ export default function Projects() {
     <section id="projects" ref={ref} className="py-24 relative"
       style={{ background: "linear-gradient(180deg,#1e1a2e 0%,#1a162a 100%)" }}>
       <div className="max-w-6xl mx-auto px-6">
-
-        {/* Section header */}
         <div className={`flex items-center justify-between mb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
           <div className="flex items-center gap-3">
             <span className="text-orange-500 font-bold text-2xl" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>#</span>
@@ -41,7 +39,7 @@ export default function Projects() {
           <span className="text-white/40">ls -la</span>
         </div>
 
-        {/* Grid */}
+     
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.slice(0, 3).map((project, i) => (
             <div key={project.id}

@@ -49,12 +49,16 @@ export default function AboutMe() {
                 <div className="w-2 h-2 rounded-full bg-orange-500" />
                 <span className="text-xs text-white/30" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>about-me.txt — gedit</span>
               </div>
-              <p className="text-sm font-medium text-white mb-3" style={{ fontFamily: "'Ubuntu',sans-serif" }}>Hello, I&apos;m Methy!</p>
-              <p className="text-[13px] text-white/50 leading-relaxed mb-3" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
-                I&apos;m a self-taught front-end developer based in Chroy Chongva, Phnom Penh. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences.
+             <p className="text-sm font-medium text-white mb-3" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
+                Hello, I&apos;m Muy Methy!
               </p>
+
+              <p className="text-[13px] text-white/50 leading-relaxed mb-3" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
+                I&apos;m a 3rd-year Computer Science student at CADT and a web developer based in Phnom Penh. I build responsive, user-friendly web applications using modern technologies.
+              </p>
+
               <p className="text-[13px] text-white/50 leading-relaxed" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
-                Transforming my creativity and knowledge into websites has been my passion for over a year. I always strive to learn about the newest technologies and frameworks.
+                I enjoy turning ideas into real-world projects and continuously improving my skills in full-stack development and new technologies.
               </p>
             </div>
 
