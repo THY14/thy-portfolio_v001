@@ -17,7 +17,7 @@ export default function Quote() {
         <div className={`transition-all duration-1000 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}>
           <p className="text-xl font-light text-white/55 leading-relaxed italic" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
             &quot;It is not enough for code to work — it must be{" "}
-            <span className="text-orange-400 not-italic font-medium">elegant</span>,{" "}
+            <span className="not-italic font-medium" style={{ color: "var(--accent)" }}>elegant</span>,{" "}
             <span className="text-sky-400 not-italic font-medium">readable</span>, and{" "}
             <span className="text-green-400 not-italic font-medium">maintainable</span>.&quot;
           </p>

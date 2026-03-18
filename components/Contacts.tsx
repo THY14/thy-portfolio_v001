@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 const CONTACTS = [
-  { label: "Discord",  value: "3farmer#3519",   icon: "/discord.svg",  href: "https://discord.com", color: "#5865f2" },
-  { label: "Email",    value: "methymuy@gmail.com", icon: "/email.svg",    href: "mailto:elias@elias.me", color: "#E95420" },
-  { label: "Telegram", value: "@methy14",         icon: "/telegram.svg", href: "#", color: "#2aabee" },
+  { label: "Discord",  value: "3farmer#3519",      icon: "/discord.svg",  href: "https://discord.com",       color: "#5865f2" },
+  { label: "Email",    value: "methymuy@gmail.com", icon: "/email.svg",    href: "https://mail.google.com/mail/?view=cm&fs=1&to=methymuy@gmail.com",     color: "#E95420" },
+  { label: "Telegram", value: "@methy14",           icon: "/telegram.svg", href: "https://t.me/methy14",     color: "#2aabee" },
 ];
 
 export default function Contacts() {
@@ -29,9 +29,9 @@ export default function Contacts() {
     <section id="contacts" ref={ref} className="py-24" style={{ background: "#1e1a2e" }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className={`flex items-center gap-3 mb-12 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}>
-          <span className="text-orange-500 font-bold text-2xl" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>#</span>
+          <span className="font-bold text-2xl" style={{ fontFamily: "'Ubuntu Mono',monospace", color: "var(--accent)" }}>#</span>
           <h2 className="text-3xl font-bold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>contacts</h2>
-          <div className="hidden sm:block h-px w-28 bg-orange-500/25" />
+          <div className="hidden sm:block h-px w-28" style={{ background: "var(--accent-border)" }} />
         </div>
 
         <div className="grid md:grid-cols-2 gap-10">
@@ -39,8 +39,6 @@ export default function Contacts() {
             <p className="text-[16px] text-white/50 leading-relaxed max-w-sm" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
               I&apos;m interested in freelance opportunities. However, if you have other requests or questions, don&apos;t hesitate to contact me.
             </p>
-
-            {/* Status pill */}
             <div className="inline-flex items-center gap-3 px-4 py-3 rounded-xl border border-green-500/20" style={{ background: "rgba(76,255,145,0.05)" }}>
               <div className="relative w-2.5 h-2.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
@@ -53,10 +51,8 @@ export default function Contacts() {
             </div>
           </div>
 
-          {/* RIGHT — contact window */}
           <div className={`transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-6"}`}>
             <div className="rounded-xl overflow-hidden border border-white/8 shadow-xl" style={{ background: "#14112a" }}>
-              {/* Titlebar */}
               <div className="flex items-center gap-2 px-4 py-2.5 border-b border-black/30" style={{ background: "#2e2841" }}>
                 <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
                 <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
@@ -87,7 +83,9 @@ export default function Contacts() {
                         </a>
                       </div>
                       <button onClick={() => copy(c.value)}
-                        className="opacity-0 group-hover:opacity-100 p-2 rounded text-white/30 hover:text-orange-400 transition-all">
+                        className="opacity-0 group-hover:opacity-100 p-2 rounded text-white/30 transition-all"
+                        onMouseEnter={e => (e.currentTarget.style.color = "var(--accent)")}
+                        onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.3)")}>
                         {copied === c.value
                           ? <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="#4cff91" strokeWidth="2.5"/></svg>
                           : <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" strokeWidth="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke="currentColor" strokeWidth="2"/></svg>

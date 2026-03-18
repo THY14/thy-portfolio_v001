@@ -9,9 +9,12 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <div
       className={`rounded-xl overflow-hidden border transition-all duration-300 flex flex-col ${
-        hovered ? "border-orange-500/30 -translate-y-1 shadow-2xl" : "border-white/8 shadow-lg"
+        hovered ? "-translate-y-1 shadow-2xl" : "border-white/8 shadow-lg"
       }`}
-      style={{ background: "#14112a" }}
+      style={{
+        background: "#14112a",
+        borderColor: hovered ? "var(--accent-border)" : undefined,
+      }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}>
 
@@ -25,8 +28,8 @@ export default function ProjectCard({ project }: { project: Project }) {
         </span>
         {project.liveUrl && (
           <a href={project.liveUrl} onClick={e => e.stopPropagation()}
-            className="text-[13px] px-2 py-0.5 rounded bg-orange-500/15 text-orange-400 border border-orange-500/25 hover:bg-orange-500/25 transition-colors"
-            style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
+            className="text-[13px] px-2 py-0.5 rounded transition-colors"
+            style={{ fontFamily: "'Ubuntu Mono',monospace", background: "var(--accent-bg)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}>
             ↗ live
           </a>
         )}
@@ -38,7 +41,6 @@ export default function ProjectCard({ project }: { project: Project }) {
           className={`object-cover transition-transform duration-500 ${hovered ? "scale-105" : "scale-100"}`} />
         <div className={`absolute inset-0 transition-opacity duration-300 ${hovered ? "opacity-60" : "opacity-40"}`}
           style={{ background: "linear-gradient(to bottom,transparent 30%,#14112a 100%)" }} />
-        {/* Scanlines */}
         <div className="absolute inset-0 pointer-events-none"
           style={{ backgroundImage: "repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.04) 2px,rgba(0,0,0,0.04) 4px)" }} />
       </div>
@@ -54,8 +56,8 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div className="flex flex-wrap gap-1.5">
           {project.tags.slice(0, 5).map((tag) => (
             <span key={tag}
-              className="text-[11px] px-2 py-0.5 rounded bg-orange-500/8 border border-orange-500/25 text-orange-400/80"
-              style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
+              className="text-[11px] px-2 py-0.5 rounded"
+              style={{ fontFamily: "'Ubuntu Mono',monospace", background: "var(--accent-bg)", border: "1px solid var(--accent-border)", color: "var(--accent)" }}>
               {tag}
             </span>
           ))}
@@ -71,8 +73,10 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div className="flex items-center gap-4 pt-2 border-t border-white/5 mt-auto">
           {project.liveUrl && (
             <a href={project.liveUrl}
-              className="flex items-center gap-1.5 text-[12px] text-white/35 hover:text-orange-400 transition-colors"
-              style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
+              className="flex items-center gap-1.5 text-[12px] text-white/35 transition-colors"
+              style={{ fontFamily: "'Ubuntu Mono',monospace" }}
+              onMouseEnter={e => (e.currentTarget.style.color = "var(--accent)")}
+              onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.35)")}>
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" stroke="currentColor" strokeWidth="2"/><polyline points="15 3 21 3 21 9" stroke="currentColor" strokeWidth="2"/><line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" strokeWidth="2"/></svg>
               Live
             </a>
