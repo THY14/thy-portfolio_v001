@@ -108,7 +108,9 @@ export default function Navbar() {
   useEffect(() => {
     document.documentElement.style.setProperty("--accent", accent);
   }, [accent]);
-
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
     <>
@@ -126,14 +128,14 @@ export default function Navbar() {
             style={{ fontFamily: "'Ubuntu', sans-serif" }}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <rect x="3" y="3" width="7" height="7" rx="1.5" fill="#E95420" />
+              <rect x="3" y="3" width="7" height="7" rx="1.5" fill="var(--accent)" />
               <rect
                 x="14"
                 y="3"
                 width="7"
                 height="7"
                 rx="1.5"
-                fill="#E95420"
+                fill="var(--accent)"
                 opacity=".6"
               />
               <rect
@@ -142,7 +144,7 @@ export default function Navbar() {
                 width="7"
                 height="7"
                 rx="1.5"
-                fill="#E95420"
+                fill="var(--accent)"
                 opacity=".6"
               />
               <rect
@@ -151,7 +153,7 @@ export default function Navbar() {
                 width="7"
                 height="7"
                 rx="1.5"
-                fill="#E95420"
+                fill="var(--accent)"
                 opacity=".3"
               />
             </svg>
@@ -164,18 +166,18 @@ export default function Navbar() {
             {navItems.map((item) => {
               const id = item.href.replace("#", "");
               const isActive = active === id;
-
               return (
-                <button
-                  key={id}
-                  onClick={() => go(item.href)}
-                  className={`px-3 py-1 rounded text-md transition-all border-b-2 ${
-                    isActive
-                      ? "text-orange-400 bg-orange-500/10 border-orange-500"
-                      : "text-white/50 hover:text-white/80 border-transparent"
-                  }`}
-                >
-                  {item.label}
+               <button
+                    key={id}
+                    onClick={() => go(item.href)}
+                    className="px-3 py-1 rounded text-md transition-all border-b-2"
+                    style={{
+                      color: isActive ? "var(--accent)" : "rgba(255,255,255,0.5)",
+                      background: isActive ? "var(--accent-bg)" : "transparent",
+                      borderBottomColor: isActive ? "var(--accent)" : "transparent",
+                    }}
+                  >
+                    {item.label}
                 </button>
               );
             })}

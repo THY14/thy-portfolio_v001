@@ -12,11 +12,6 @@ const BOOT_LINES = [
 ];
 
 const TERM = [
-  // { p: true, cmd: "whoami" },
-  // { p: false, text: "Methy — Web Developer " },
-  // { p: false, text: "Phnom Penh · Building modern web apps" },
-  // { p: false, text: "" },
-
   { p: true, cmd: "cat about.txt" },
   { p: false, text: "Third-year Computer Science student at CADT" },
   { p: false, text: "Focused on full-stack development and real-world projects" },
@@ -130,7 +125,7 @@ export default function Hero() {
                 </div>
               ))}
               {ready && (
-                <div className="leading-[22px] mt-1">
+                <div className="leading-[21px] mt-1">
                   <span className="text-green-400">methy</span>
                   <span className="text-white/20">@</span>
                   <span className="text-blue-400">ubuntu</span>
