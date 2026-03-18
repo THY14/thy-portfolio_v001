@@ -85,5 +85,6 @@ export const socialLinks: SocialLink[] = [
   // { name: "LinkedIn", href: "#", icon: "/linkedin.svg" },
   // { name: "Discord", href: "#", icon: "/discord.svg" },
   { name: "Telegram", href: "https://t.me/methy14", icon: "/telegram.svg" },
-  { name: "Email", href: "mailtomethymuy@gmail.com", icon: "/email.svg" },
+  { name: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=methymuy@gmail.com"
+, icon: "/email.svg" },
 ];

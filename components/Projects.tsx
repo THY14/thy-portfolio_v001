@@ -23,7 +23,7 @@ export default function Projects() {
             <h2 className="text-3xl font-bold text-white" style={{ fontFamily: "'Ubuntu',sans-serif" }}>projects</h2>
             <div className="hidden sm:block h-px w-28 bg-orange-500/25" />
           </div>
-          <a href="#" className="text-md text-white/35 hover:text-orange-400 transition-colors flex items-center gap-1.5"
+          <a href="https://github.com/THY14" target="blank" className="text-md text-white/35 hover:text-orange-400 transition-colors flex items-center gap-1.5"
             style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
             View all →
           </a>
