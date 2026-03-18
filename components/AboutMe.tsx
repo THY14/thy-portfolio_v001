@@ -8,7 +8,7 @@ const CODE = [
   `  role: <span style="color:#86efac">"Software - Developer"</span>,`,
   `  location: <span style="color:#86efac">"Chroy Chongva, Phnom Penh"</span>,`,
   `  passion: <span style="color:#86efac">"Building web experiences"</span>,`,
-  `  experience: <span style="color:#fcd34d">1</span>+ <span style="color:#86efac">"year"</span>,`,
+  `  experience: <span style="color:#fcd34d">Internship</span> level <span style="color:#86efac"></span>,`,
   `  openToWork: <span style="color:#f472b6">true</span>,`,
   `  <span style="color:#6b7280">// Always learning...</span>`,
   `}`,
@@ -53,7 +53,7 @@ export default function AboutMe() {
                 Hello, I&apos;m Muy Methy!
               </p>
 
-              <p className="text-[14px] text-white/50 leading-relaxed mb-3" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
+              <p className="text-[16px] text-white/50 leading-relaxed mb-3" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
                 I&apos;m a 3rd-year Computer Science student at CADT and a web developer based in Phnom Penh. I build responsive, user-friendly web applications using modern technologies.
               </p>
 
@@ -62,11 +62,11 @@ export default function AboutMe() {
               </p>
             </div>
 
-            <button className="flex items-center gap-2 px-5 py-2 rounded text-sm font-medium text-white transition-all hover:brightness-110 active:scale-95"
+            {/* <button className="flex items-center gap-2 px-5 py-2 rounded text-sm font-medium text-white transition-all hover:brightness-110 active:scale-95"
               style={{ background: "linear-gradient(to bottom,#F47421,#C7461A)", fontFamily: "'Ubuntu',sans-serif", boxShadow: "0 2px 8px rgba(233,84,32,0.35)" }}>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="white" strokeWidth="2"/><polyline points="14 2 14 8 20 8" stroke="white" strokeWidth="2"/></svg>
               Read More →
-            </button>
+            </button> */}
           </div>
           <div className={`space-y-5 transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-6"}`}>
             <div className="rounded-xl overflow-hidden border border-white/8" style={{ background: "#100e1e" }}>

@@ -59,7 +59,7 @@ export const projects: Project[] = [
 export const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
-    skills: ["TypeScript", "JAVA", "C/C++", "JavaScript" ,"Dart"],
+    skills: ["TypeScript", "JAVA", "C/C++", "JavaScript" ,"Dart" ,"Python"],
   },
   {
     title: "Databases",
@@ -75,15 +75,15 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Frameworks",
-    skills: ["React", "Vue", "FLutter", "Flask", "Express.js"],
+    skills: ["React", "Vue", "FLutter", "Flask", "Express.js","Nest"],
   },
 ];
 
 export const socialLinks: SocialLink[] = [
-  { name: "GitHub", href: "#", icon: "/github.svg" },
-  { name: "Twitter", href: "#", icon: "/twitter.svg" },
-  { name: "LinkedIn", href: "#", icon: "/linkedin.svg" },
-  { name: "Discord", href: "#", icon: "/discord.svg" },
-  { name: "Telegram", href: "#", icon: "/telegram.svg" },
-  { name: "Email", href: "methymuy@gmail.com", icon: "/email.svg" },
+  { name: "GitHub", href: "https://github.com/THY14", icon: "/github.svg" },
+  // { name: "Twitter", href: "#", icon: "/twitter.svg" },
+  // { name: "LinkedIn", href: "#", icon: "/linkedin.svg" },
+  // { name: "Discord", href: "#", icon: "/discord.svg" },
+  { name: "Telegram", href: "https://t.me/methy14", icon: "/telegram.svg" },
+  { name: "Email", href: "mailtomethymuy@gmail.com", icon: "/email.svg" },
 ];

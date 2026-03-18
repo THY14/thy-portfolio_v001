@@ -144,7 +144,7 @@ export default function Hero() {
           </div>
           <div className="flex flex-wrap gap-2.5 mt-4">
             {[
-              { icon: "⏱", label: "1+ yr experience", accent: false },
+              { icon: "⏱", label: "Real-world project experience", accent: false },
               { icon: "🗂", label: "10+ projects",     accent: false },
               { icon: "✓", label: "Open to work",      accent: true  },
             ].map((s) => (

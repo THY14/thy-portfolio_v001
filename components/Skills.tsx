@@ -3,12 +3,12 @@ import { useEffect, useRef, useState } from "react";
 import { skillCategories } from "@/lib/data";
 
 const ICONS: Record<string, string> = {
-  TypeScript:"🔷", JavaScript:"🟡", Python:"🐍", Lua:"🌙",
-  React:"⚛", Vue:"💚", "Discord.js":"💬", Flask:"🌶", "Express.js":"🟢",
-  Disnake:"🎮", "Next.js":"▲", SQLite:"🗄", PostgreSQL:"🐘", Mongo:"🍃",
-  VSCode:"💻", Neovim:"🔧", Linux:"🐧", Figma:"🎨", XFCE:"🖥", Arch:"⚙",
-  Git:"📦", "Font Awesome":"✨", HTML:"📄", CSS:"🎨", SCSS:"💅",
-  EJS:"📝", REST:"🔗", Jinja:"🏗",
+  TypeScript:"", JavaScript:"", Python:"", Lua:"",
+  React:"", Vue:"", Flask:"", "Express.js":"",
+  "Next.js":"", SQLite:"", PostgreSQL:"", Mongo:"",
+  VSCode:"", Neovim:"", Linux:"", Figma:"", XFCE:"", Arch:"",
+  Git:"", "Font Awesome":"", HTML:"", CSS:"", SCSS:"",
+  EJS:"", REST:"", Jinja:"",
 };
 
 export default function Skills() {
