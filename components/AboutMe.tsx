@@ -85,7 +85,7 @@ export default function AboutMe() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center gap-4 p-4 rounded-xl border border-white/8" style={{ background: "#14112a" }}>
+            {/* <div className="flex items-center gap-4 p-4 rounded-xl border border-white/8" style={{ background: "#14112a" }}>
               <div className="relative w-15 h-20 rounded-xl overflow-hidden border-2 flex-shrink-0"
                 style={{ borderColor: "var(--accent-border)", boxShadow: "0 0 18px var(--accent-bg)" }}>
                 <Image src="/methy.png" alt="Methy" fill className="object-cover" />
@@ -103,7 +103,7 @@ export default function AboutMe() {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
