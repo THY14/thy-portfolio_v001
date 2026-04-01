@@ -7,10 +7,12 @@ import Skills from "@/components/Skills";
 import AboutMe from "@/components/AboutMe";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
+import ChatBot from "@/components/Chatbot";
 
 export default function Home() {
   return (
     <>
+      <ChatBot/>
       <Navbar />
       <Sidebar />
       <main>
