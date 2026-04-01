@@ -50,8 +50,18 @@ export const projects: Project[] = [
     description: "An Khmer Language website, user can buy course with bakong and self-learning",
     image: "/projects/sastra.png",
     tags: ["Node.js", "Tailwind", "Next.js","Express"],
-    // liveUrl: "#",
+    liveUrl: "https://sastra-online-learning-platform.vercel.app/",
     cachedUrl: "https://github.com/pychey/Online-Learning-Platform.git",
+   
+  },
+  {
+    id: "Moonups",
+    title: "Moonups",
+    description: "An interest-based web platform seeking to build a startup team and attract investment",
+    image: "/projects/moonups.png",
+    tags: ["Node.js", "Tailwind", "Next.js","Express"],
+    // liveUrl: "#",
+    cachedUrl: "https://github.com/THY14/moonup-email.git",
    
   },
 ];
