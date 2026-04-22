@@ -137,9 +137,9 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-2.5 mt-4">
             {[
-              { icon: "⏱", label: "Real-world project experience", accent: false },
-              { icon: "🗂", label: "10+ projects", accent: false },
-              { icon: "✓", label: "Open to work", accent: true },
+              { icon: "", label: "Real-world project experience", accent: false },
+              { icon: "", label: "10+ projects", accent: false },
+              { icon: "", label: "Open to work", accent: true },
             ].map((s) => (
               <div key={s.label}
                 className="flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs border"
@@ -156,7 +156,7 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col items-center gap-6 anim-fade-right d-200 lg:-mt-10">
-          <div className="w-full max-w-sm rounded-xl border border-white/8 p-4 shadow-xl anim-fade-right d-300"
+          {/* <div className="w-full max-w-sm rounded-xl border border-white/8 p-4 shadow-xl anim-fade-right d-300"
             style={{ background: "rgba(30,26,48,0.9)", backdropFilter: "blur(12px)" }}>
             <div className="flex items-center gap-3 mb-3">
               <div className="flex-1 min-w-0">
@@ -171,13 +171,13 @@ export default function Hero() {
             <p className="text-[14px] text-white/55 leading-relaxed" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
               Crafts responsive websites where technologies meet creativity.
             </p>
-          </div>
+          </div> */}
 
-          <div className="relative anim-float">
+          <div className=" mt-0 lg:mt-30 anim-float  ">
             <div className="absolute -inset-4 rounded-full border border-dashed anim-spin"
               style={{ borderColor: "var(--accent-border)", animationDuration: "14s" }} />
             <div className="absolute -inset-8 rounded-full border border-white/5" />
-            <div className="relative rounded-2xl overflow-hidden border-2 shadow-2xl"
+            <div className="relative rounded-2xl overflow-hidden border-2 shadow-2xl "
               style={{ borderColor: "var(--accent-border)", boxShadow: "0 0 40px var(--accent-bg)" }}>
               <Image src="/methy.png" alt="" width={220} height={100} className="object-contain block" priority />
             </div>

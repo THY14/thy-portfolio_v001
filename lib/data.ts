@@ -73,7 +73,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Databases",
-    skills: ["SQLite", "PostgreSQL", "Mongo"],
+    skills: ["SQLite", "PostgreSQL"],
   },
   {
     title: "Tools",
@@ -85,7 +85,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Frameworks",
-    skills: ["React", "Vue", "FLutter", "Flask", "Express.js","Nest"],
+    skills: ["React", "Vue", "FLutter", "Express.js","Nest"],
   },
 ];
 

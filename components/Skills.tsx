@@ -66,13 +66,13 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className={`mt-8 p-4 rounded-lg border border-white/5 text-md transition-all duration-700 delay-500 ${visible ? "opacity-100" : "opacity-0"}`}
+        {/* <div className={`mt-8 p-4 rounded-lg border border-white/5 text-md transition-all duration-700 delay-500 ${visible ? "opacity-100" : "opacity-0"}`}
           style={{ background: "rgba(0,0,0,0.3)", fontFamily: "'Ubuntu Mono',monospace" }}>
           <span className="text-white/25"># apt list --installed | grep skills</span><br />
           <span className="text-green-400 mt-1 block">
             {skillCategories.reduce((a, c) => a + c.skills.length, 0)} packages installed · 0 upgraded · 0 to remove · 0 not upgraded.
           </span>
-        </div>
+        </div> */}
       </div>
     </section>
   );

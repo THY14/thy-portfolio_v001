@@ -42,8 +42,8 @@ export default function AboutMe() {
           <div className="hidden sm:block h-px w-28" style={{ background: "var(--accent-border)" }} />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 items-start">
-          <div className={`space-y-5 transition-all duration-700 delay-100 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}`}>
+        <div className="grid md:grid-cols-2 gap-10 items-start ">
+          <div className={`space-y-5 transition-all duration-700 delay-100  ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}`}>
             <div className="rounded-xl border border-white/8 p-5" style={{ background: "#14112a" }}>
               <div className="flex items-center gap-2 mb-4 pb-3 border-b border-white/5">
                 <div className="w-2 h-2 rounded-full" style={{ background: "var(--accent)" }} />
@@ -56,7 +56,7 @@ export default function AboutMe() {
                 I&apos;m a 3rd-year Computer Science student at CADT and a web developer based in Phnom Penh. I build responsive, user-friendly web applications using modern technologies.
               </p>
               <p className="text-[16px] text-white/50 leading-relaxed" style={{ fontFamily: "'Ubuntu',sans-serif" }}>
-                I enjoy turning ideas into real-world projects and continuously improving my skills in full-stack development and new technologies.
+                I enjoy turning ideas into real-world projects and continuously improving my skills in full-stack development while adapting to new technologies.
               </p>
             </div>
           </div>
