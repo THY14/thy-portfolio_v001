@@ -196,7 +196,7 @@ export default function ChatBot() {
       </button>
       <div
         className={`fixed z-[998] transition-all duration-300
-          left-0 right-0 bottom-0 rounded-t-2xl
+          left-0 right-0 bottom-15 rounded-t-2xl
           sm:bottom-24 sm:right-6 sm:left-auto sm:w-[350px] sm:rounded-xl
           ${
             open
