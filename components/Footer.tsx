@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="flex items-center gap-3" />
         <p className="text-[11px] text-white/25 mb-8 lg:mb-0" style={{ fontFamily: "'Ubuntu Mono',monospace" }}>
           <span style={{ color: "var(--accent)" }}>©2026</span> <span className="text-red-400"></span> ·{" "}
-          <span className="text-green-400">Ubuntu 22.04 LTS</span>
+          {/* <span className="text-green-400">Ubuntu 22.04 LTS</span> */}
         </p>
       </div>
     </footer>
