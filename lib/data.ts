@@ -22,7 +22,7 @@ export const projects: Project[] = [
     title: "Codify",
     description: "Coding Based LMS ",
     image: "/projects/codify.png",
-    tags: ["Next.js", "Typescripts", "Nest.js", "", "Tailwind CSS", "" ,"","" ],
+    tags: ["Next.js", "Typescripts", "Nest.js", "", "Tailwind CSS", "Docker" ,"","" ],
     liveUrl: "http://codify.works/",
     cachedUrl: "https://github.com/THY14/Codify-hosting.git",
   },
